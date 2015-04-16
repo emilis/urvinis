@@ -1,0 +1,19 @@
+{
+  "name": "urvinis",
+  "version": "1.0.0",
+  "description": "a game",
+  "main": "index.js",
+  "dependencies": {
+    "alea": "0.0.9",
+    "blessed": "^0.1.0",
+    "fractal-terrain-generator": "0.0.2",
+    "lodash": "^3.6.0",
+    "simplex-noise": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
