@@ -18,7 +18,9 @@ var INTERVAL =          1000 / FPS;
 /// Main -----------------------------------------------------------------------
 
 // Create a screen object.
-var screen =            blessed.screen();
+var screen =            blessed.screen({
+    term:               "xterm-256color",
+});
 
 // Create a box perfectly centered horizontally and vertically.
 var box =   blessed.box({
