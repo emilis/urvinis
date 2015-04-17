@@ -7,6 +7,7 @@ var blessed =           require( 'blessed' );
 
 var CONST =             require( "./lib/constants" );
 
+var Player =            require( "./lib/world/player" );
 var Vector =            require( "./lib/geometry/vector" );
 var World =             require( "./lib/world/world" );
 
@@ -28,7 +29,7 @@ var screen =            blessed.screen({
 var box =   blessed.box({
     top:                0, ///'center',
     left:               0, ///'center',
-    width:              "50%", ///CONST.width * CONST.pxwidth,
+    width:              "60%", ///CONST.width * CONST.pxwidth,
     height:             "100%", /// CONST.height,
     border:             { type: "line" },
     label:              "[ World ]",
@@ -51,12 +52,21 @@ screen.on( "resize", thFrame );
 
 screen.key([ 'q', 'C-c' ], quit );
 
-screen.key([ "left" ],  function(){ World.playerLeft();     thFrame(); });
-screen.key([ "right" ], function(){ World.playerRight();    thFrame(); });
-screen.key([ "up" ],    function(){ World.playerUp();       thFrame(); });
-screen.key([ "down" ],  function(){ World.playerDown();     thFrame(); });
+/// Add player:
 
-screen.key([ "space" ], function(){ World.playerDraw();     thFrame(); });
+var player1 =            new Player( "Player1", "#66f", "yellow" );
+player1.setPos( 10, 20 );
+World.addPlayer( player1 );
+
+screen.key([ "left" ],  movePlayer( player1, "left" ));
+screen.key([ "right" ], movePlayer( player1, "right" ));
+screen.key([ "up" ],    movePlayer( player1, "up" ));
+screen.key([ "down" ],  movePlayer( player1, "down" ));
+screen.key([ "space" ], function(){ player1.draw();     thFrame(); });
+
+/// Redraw:
+
+thFrame();
 
 /// Functions ------------------------------------------------------------------
 
@@ -73,4 +83,13 @@ function frame(){
 function quit(){
 
     return process.exit( 0 );
+}///
+
+
+function movePlayer( player, direction ){
+    return function(){
+
+        player[direction]();
+        thFrame();
+    };//
 }///
