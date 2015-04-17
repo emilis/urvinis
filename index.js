@@ -20,6 +20,8 @@ var INTERVAL =          1000 / FPS;
 // Create a screen object.
 var screen =            blessed.screen({
     term:               "xterm-256color",
+    fullUnicode:        true,
+
 });
 
 // Create a box perfectly centered horizontally and vertically.
@@ -28,6 +30,8 @@ var box =   blessed.box({
     left:               0, ///'center',
     width:              "50%", ///CONST.width * CONST.pxwidth,
     height:             "100%", /// CONST.height,
+    border:             { type: "line" },
+    label:              "[ World ]",
     scrollable:         true,
     alwaysScroll:       true,
     tags:               true,
@@ -42,6 +46,8 @@ screen.append( box );
 
 var thFrame =           _.throttle( frame, INTERVAL );
 thFrame();
+
+screen.on( "resize", thFrame );
 
 screen.key([ 'q', 'C-c' ], quit );
 
@@ -58,7 +64,7 @@ function frame(){
 
     box.setContent(
         World.getState(
-            new Vector( 0, 0, Math.floor( box.width / 2 ), box.height )
+            new Vector( 0, 0, Math.floor( box.width / 2 ) - 1, box.height - 2 )
         )
     );
     screen.render();
