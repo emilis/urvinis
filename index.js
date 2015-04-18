@@ -1,9 +1,8 @@
 /// Requirements ---------------------------------------------------------------
 
+var Player =            require( "./lib/game/player" );
 var screen =            require( "./lib/ui/screen" );
 var world =             require( "./lib/game/world" );
-
-var Player =            require( "./lib/game/player" );
 
 /// Constants ------------------------------------------------------------------
 
@@ -20,14 +19,13 @@ player1.setPos( START_POINT.x, START_POINT.y );
 world.addPlayer( player1 );
 
 screen.map.follow( player1, world );
-/// screen.map.render( world );
 
 screen.screen.key([ "q", "C-c" ], quit );
 
-screen.screen.key([ "left" ],  movePlayer( player1, "left" ));
-screen.screen.key([ "right" ], movePlayer( player1, "right" ));
-screen.screen.key([ "up" ],    movePlayer( player1, "up" ));
-screen.screen.key([ "down" ],  movePlayer( player1, "down" ));
+screen.screen.key([ "left" ],  player1.left.bind( player1 ));
+screen.screen.key([ "right" ], player1.right.bind( player1 ));
+screen.screen.key([ "up" ],    player1.up.bind( player1 ));
+screen.screen.key([ "down" ],  player1.down.bind( player1 ));
 
 
 /// Functions ------------------------------------------------------------------
@@ -35,14 +33,4 @@ screen.screen.key([ "down" ],  movePlayer( player1, "down" ));
 function quit(){
 
     return process.exit( 0 );
-}///
-
-
-function movePlayer( player, direction ){
-    return function(){
-
-        player[direction]();
-        /// screen.map.follow( player1 );
-        /// screen.map.render( world );
-    };//
 }///
