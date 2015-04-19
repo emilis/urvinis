@@ -26,7 +26,7 @@ screen.screen.key([ "left" ],  player1.left.bind( player1 ));
 screen.screen.key([ "right" ], player1.right.bind( player1 ));
 screen.screen.key([ "up" ],    player1.up.bind( player1 ));
 screen.screen.key([ "down" ],  player1.down.bind( player1 ));
-
+screen.screen.key([ "space" ], player1.draw.bind( player1 ));
 
 /// Functions ------------------------------------------------------------------
 
