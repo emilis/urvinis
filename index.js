@@ -19,14 +19,16 @@ player1.setPos( START_POINT.x, START_POINT.y );
 world.addPlayer( player1 );
 
 screen.map.follow( player1, world );
+var mapEl =             screen.map.getElement();
+mapEl.focus();
 
 screen.screen.key([ "q", "C-c" ], quit );
 
-screen.screen.key([ "left" ],  player1.left.bind( player1 ));
-screen.screen.key([ "right" ], player1.right.bind( player1 ));
-screen.screen.key([ "up" ],    player1.up.bind( player1 ));
-screen.screen.key([ "down" ],  player1.down.bind( player1 ));
-screen.screen.key([ "space" ], player1.plantFlower.bind( player1 ));
+mapEl.key([ "left" ],  player1.left.bind( player1 ));
+mapEl.key([ "right" ], player1.right.bind( player1 ));
+mapEl.key([ "up" ],    player1.up.bind( player1 ));
+mapEl.key([ "down" ],  player1.down.bind( player1 ));
+mapEl.key([ "space" ], player1.plantFlower.bind( player1 ));
 
 /// Functions ------------------------------------------------------------------
 
