@@ -2,7 +2,7 @@
 
 var Player =            require( "./lib/game/player" );
 var Rectangle =         require( "./lib/game/geometry/rectangle" );
-var screen =            require( "./lib/ui/screen" );
+var ui =                require( "./lib/ui/ui" );
 var world =             require( "./lib/game/world" );
 
 /// Constants ------------------------------------------------------------------
@@ -25,11 +25,11 @@ world.npcs.generate( 1000, new Rectangle(
 ));
 world.addPlayer( player1 );
 
-screen.map.follow( player1, world );
-var mapEl =             screen.map.getElement();
+ui.map.follow( player1, world );
+var mapEl =             ui.map.getElement();
 mapEl.focus();
 
-screen.screen.key([ "q", "C-c" ], quit );
+ui.screen.key([ "q", "C-c" ], quit );
 
 mapEl.key([ "left" ],  player1.left.bind( player1 ));
 mapEl.key([ "right" ], player1.right.bind( player1 ));
