@@ -1,6 +1,7 @@
 /// Requirements ---------------------------------------------------------------
 
 var Player =            require( "./lib/game/player" );
+var Rectangle =         require( "./lib/game/geometry/rectangle" );
 var screen =            require( "./lib/ui/screen" );
 var world =             require( "./lib/game/world" );
 
@@ -16,6 +17,12 @@ var START_POINT = {
 var player1 =           new Player( "Player1", "PL", "blue", "yellow" );
 player1.setPos( START_POINT.x, START_POINT.y );
 
+world.npcs.generate( 1000, new Rectangle(
+    START_POINT.x - 1000,
+    START_POINT.y - 1000,
+    START_POINT.x + 1000,
+    START_POINT.y + 1000
+));
 world.addPlayer( player1 );
 
 screen.map.follow( player1, world );
