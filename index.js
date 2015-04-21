@@ -29,6 +29,8 @@ ui.map.follow( player1, world );
 var mapEl =             ui.map.getElement();
 mapEl.focus();
 
+player1.on( "new-pos", checkForNpcs );
+
 ui.screen.key([ "q", "C-c" ], quit );
 
 mapEl.key([ "left" ],  player1.left.bind( player1 ));
@@ -42,4 +44,24 @@ mapEl.key([ "space" ], player1.plantFlower.bind( player1 ));
 function quit(){
 
     return process.exit( 0 );
+}///
+
+
+function checkForNpcs( player ){
+
+    var npc_list =      world.npcs.getAt( player );
+    if( npc_list.length ){
+        ui.info.setContent( npc_list[0].text );
+    } else {
+        ui.info.setContent( getPositionInfo( player ));
+    }
+}///
+
+
+function getPositionInfo( pos ){
+
+    return [
+        "X: ", pos.x, "\n",
+        "Y: ", pos.y, "\n",
+    ].join( "" );
 }///

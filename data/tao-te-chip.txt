@@ -1,0 +1,523 @@
+The tao that can be tar(1)ed
+is not the entire Tao.
+The PATH that can be specified
+is not the full PATH.
+
+We declare the names
+of all variables and functions.
+Yet the Tao has no type specifier.
+
+Dynamically binding, you realize the magic.
+Statically binding, you see only the hierarchy.
+
+Yet magic and hierarchy
+arise from the same source,
+and this source has a null pointer.
+
+Reference the NULL within NULL,
+it is the gateway to all wizardry.
+
+---
+
+When users see one GUI as beautiful,
+other user interfaces become ugly.
+When users see some programs as winners,
+other programs become lossage.
+
+Pointers and NULLs reference each other.
+High level and assembler depend on each other.
+Double and float cast to each other.
+High-endian and low-endian define each other.
+While and until follow each other.
+
+Therefore the Guru
+programs without doing anything
+and teaches without saying anything.
+Warnings arise and he lets them come;
+processes are swapped and he lets them go.
+He has but doesn't chown,
+acts but doesn't expect.
+When his work is done, he deletes it.
+That is why it lasts forever.
+
+---
+
+When you overesteem great hackers,
+more users become cretins.
+When you develop encryption,
+more users become crackers.
+
+The Guru leads
+by emptying user's minds
+and increasing their quotas,
+by weakening their ambition
+and toughening their resolve.
+When users lack knowledge and desire,
+management will not try to interfere.
+
+Practice not-looping,
+and everything will fall into place.
+
+---
+
+The Tao is like a glob pattern:
+used but never used up.
+It is like the extern void:
+filled with infinite possibilities.
+
+It is masked but always present.
+I don't know who built it.
+It came before the first kernel.
+
+---
+
+The Tao doesn't take sides;
+it gives birth to both wins and losses.
+The Guru doesn't take sides;
+she welcomes both hackers and lusers.
+
+The Tao is like a stack:
+the data changes but not the structure.
+the more you use it, the deeper it becomes;
+the more you talk of it, the less you understand.
+
+Hold on to the root.
+
+---
+
+The Tao is called the Great Server:
+empty yet inexhaustible,
+it gives birth to infinite networks.
+
+Its code is present within you.
+You can apply it any way you want.
+
+---
+
+Fill your disk to the brim
+and it will fragment.
+Keep adding features to your utility
+and it will become unusable.
+Chase after royalties and license fees
+and your heart will never unclench.
+Care about a luser's approval
+and you will be his prisoner.
+
+Do your work, then logout.
+The only path to serenity.
+
+---
+
+Graphics blind the eyes.
+Audio files deafen the ear.
+Mouse clicks numb the fingers.
+Heuristics weaken the mind.
+Options wither the heart.
+
+The Guru observes the net
+but trusts his inner vision.
+He allows things to come and go.
+His heart is as open as the ether.
+
+---
+
+more, and it can't be read.
+find, and it can't be located.
+grep, and it can't be scanned.
+
+In the foreground, it isn't a hog.
+In the background, it isn't idle.
+Contiguous, unpatchable,
+it lives below the realm of logic.
+From there it includes all formulas,
+an image without a viewer,
+virtual, beyond all conception.
+
+Rewind it and there is no beginning;
+Fast forward and there is no end.
+You can't know it, but you can be it,
+at ease in your own life.
+Just realize where you log from:
+this is the essence of wisdom.
+
+---
+
+The ancient Wizards were profound and subtle.
+Their wisdom was unfathomable.
+There is no way to describe it;
+all we can do is read their source code.
+
+They were careful
+as someone writing an unbuffered stream.
+Alert as a warrior in a dangerous MUD.
+Courteous as an anonymous ftp.
+Fluid as a morphing face.
+Shapable as an interpolated spline.
+Receptive as a dialup slip connection.
+Clear as a sharpened bitmap.
+
+Do you have the patience to wait
+till the broadcast storm subsides and the net is clear?
+Can you mask interrupts
+till the right thunk arises by itself?
+
+The Guru doesn't seek fulfillment.
+Not seeking, not throwing exceptions,
+she is present, and can welcome all things.
+
+---
+
+When the Guru administers, the users
+are hardly aware that he exists.
+Next best is a sysop who is loved.
+Next, one who is feared.
+And worst, one who is despised.
+
+If you don't trust the users,
+you make them untrustworthy.
+
+The Guru doesn't talk, he hacks.
+When his work is done,
+the users say, "Amazing:
+we implemented it, all by ourselves!"
+
+---
+
+When the great Tao is forgotten,
+standards and protocols appear.
+When management makes initiatives,
+the great pretense begins.
+When there is no peace in the newsgroup,
+bigots spread their theology.
+When the system becomes fragmented,
+Holy Wars are born.
+
+---
+
+Throw away documentation and manuals,
+and users will be a hundred times happier.
+Throw away privileges and quotas,
+and users will do the Right Thing.
+Throw away proprietary and site licenses,
+and there won't be any pirating.
+
+If these three aren't enough,
+just stay at your home directory
+and let all processes take their course.
+
+---
+
+Whoever relies on the Tao in administrating
+doesn't try force issues
+or defeat enemies by revoking privilages.
+For every hack there is a counterhack.
+Flaming, even with a good intention,
+will only bring flames in return.
+
+The Guru does his job
+and then signs off.
+He understands that the net
+is forever beyond his control,
+and that trying to dominate events
+goes against the current of the Tao.
+Because he believes in himself,
+he doesn't try to convince others.
+Because he is content with himself,
+he doesn't need others' approval.
+Because he accepts himself,
+the whole net accepts him.
+
+---
+
+The Tao can't be perceived.
+Smaller than an bit,
+it contains uncountable files.
+
+If powerful men and women
+could remain centered in the Tao,
+all things would be harmony.
+The net would become a paradise.
+All users would be at peace,
+and the standards would be
+those written in their hearts.
+
+When you have versions and releases,
+know that they are provisional.
+When you have consortia,
+know where their functions should end.
+Knowing when to stop,
+you can avoid any danger.
+
+All things end in the Tao
+as sendmail flows into the net.
+
+---
+
+If you want to compress something,
+you must first pkunzip it.
+If you want to get rid of a virus,
+you must first allow it to flourish.
+If you want to get() something,
+you must first allow it to be put().
+This is called the subtle perception
+of the way things are.
+
+Soft mounting overcomes the hard error.
+Brute force overcomes the heuristic.
+Let your algorithms remain a mystery.
+Just show users the results.
+
+---
+
+The return is the function of the Tao.
+Responding is the way of the Tao.
+
+All things begin as source code.
+Source code begins with an empty file.
+
+---
+
+The Tao gives birth to One.
+One gives birth to One Zero.
+One Zero gives birth to One One.
+One One gives birth to all things.
+
+All things have their backs to the input
+and stand facing the output.
+When output and input combine,
+all things achieve harmony.
+
+Ordinary users hate solitude.
+But the Guru makes use of it,
+embracing his aloneness, realizing
+he is one with cyberspace.
+
+---
+
+A tiny bug in a trivial routine
+will overcome a moby system.
+That which has no fee
+enters where there is no market space.
+This shows the value of "AS IS."
+
+Teaching without manuals,
+performing without commands:
+that is the Guru's way.
+
+---
+
+When a system is in harmony with the Tao,
+the compiler makes applications and utilities.
+When a system goes counter to the Tao,
+accounting logs fill the root directory.
+
+There is no greater illusion than fear,
+no greater wrong than in preparing to defend yourself,
+no greater misfortune than having an enemy.
+
+Whoever can see through all fear
+will always be safe.
+
+---
+
+Without opening a graphics window,
+you can open your soul to the net.
+Without looking away from the console,
+you can see the essence of the Tao.
+The more files you access,
+the less you hack.
+
+The Guru accesses without protocols,
+finds his man pages without keywords,
+optimizes without compiling.
+
+---
+
+In the pursuit of knowledge,
+every day something is appended.
+In the practice of the Tao,
+every day something is truncated.
+Less and less do you need to force things,
+until finally you arrive at non-looping.
+When nothing is done,
+nothing is left undone.
+
+True wizardry can be gained
+by letting things go their own way.
+It can't be gained by interrupting.
+
+---
+
+The Guru has no mind of her own.
+She works with the mind of the users.
+
+She is good to users who are good.
+She is also good to users who aren't good.
+This is TRUE goodness.
+
+She trusts users who are trustworthy.
+She also trusts users who aren't trustworthy.
+This is TRUE trust.
+
+The Guru's mind is like free space.
+Users don't understand her.
+They look to her and wait.
+She treats them like child processes.
+
+---
+
+Whoever is planted in the Tao
+will not have their account revoked.
+Whoever embraces the Tao
+will not become obsolete.
+Their .signatures will be met with honor
+from generation to generation.
+
+Let the Tao be present in your home
+and you will become genuine.
+Let it be present in your group
+and your group will flourish.
+Let it be present in your system
+and your system will be an example
+to all the systems in the net.
+Let it be present in cyberspace
+and all cyberspace will sync.
+
+How do I know this is true?
+By accessing myself.
+
+---
+
+Administering a large system
+is like frying a small fish.
+You spoil it with too much poking.
+
+Center your system in the Tao
+and lossage will have no power.
+Not that it isn't there,
+but you will be able to step out of its way.
+
+Give lossage nothing to oppose
+and it will disappear by itself.
+
+---
+
+The best MUD player
+wants his opponents berserking.
+The best consortium partner
+lauds the products of his competitor.
+The best corporate rep
+serves the communal good.
+The best sysop
+follows the will of the users.
+
+All of them embody
+the virtue of non-contention.
+Not that they don't love to compete,
+but they do it with the spirit of hack-and-slay.
+In this they are like wannabees
+and congruent with the Tao.
+
+---
+
+My teachings are easy to grok
+and easy to include in your programs.
+Yet your neural net will never grasp them,
+and if you try to code them, you'll fail.
+
+My teachings are older than the net.
+How can you grep their meaning?
+
+If you want to know me,
+look to your kernel.
+
+---
+
+Not-knowing is true knowledge.
+Presuming to know is a bug.
+First realize that you are broken;
+then you can move toward perfection.
+
+The Guru is her own debugger.
+She has flushed herself of all knowing.
+Thus she is truly whole.
+
+---
+
+When they lose their sense of awe,
+users turn to religious wars.
+When they no longer trust themselves,
+they begin to depend upon the authorities.
+
+Therefore the Guru steps back
+so that users won't be confused.
+He teaches without instructions,
+so that users will have nothing to learn.
+
+---
+
+The Tao is always at ease.
+It computes without grinding,
+answers without outputing a word,
+switches without being signaled,
+continues without a program.
+
+It accesses all cyberspace.
+And though it spans many volumes,
+is doesn't drop any bytes.
+
+---
+
+If you realize that all code changes,
+there is nothing you should try to archive.
+If you aren't afraid of hard drive failure,
+there is nothing you can't achieve.
+
+Trying to control the future
+is like trying to debug a running kernel.
+When you try to debug the system's kernel,
+chances are you'll panic and crash.
+
+---
+
+When license fees are too high,
+users do things by hand.
+When the management is too intrusive,
+users lose their spirit.
+
+Hack for the user's benefit.
+Trust them; leave them alone.
+
+---
+
+Failure is an opportunity.
+If you blame another user,
+there is no end to the blame.
+
+Therefore the Guru
+fulfills her own obligations
+and debugs her own code.
+She hacks what she needs to do
+and demands nothing of her coworkers.
+
+---
+
+If a system is administered wisely,
+its users will be content.
+They enjoy hacking their code
+and don't waste time implementing
+labor-saving shell scripts.
+Since they dearly love their accounts,
+they aren't interested in other machines.
+There may be telnet, rlogin, and ftp,
+but these don't access any hosts.
+There may be an arsenal of cracks and malware,
+but nobody ever uses them.
+People enjoy reading their mail,
+take pleasure in being with their newsgroups,
+spend weekends working at their terminals,
+delight in the doings at the site.
+And even though the next system is so close
+that users can hear its keys clicking and biff beeps,
+they are content to die of old age
+without ever having gone to see it.
