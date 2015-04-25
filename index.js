@@ -1,5 +1,7 @@
 /// Requirements ---------------------------------------------------------------
 
+var debug =             require( "./lib/debugger" );
+var monsters =          require( "./lib/game/monsters" );
 var Player =            require( "./lib/game/player" );
 var Rectangle =         require( "./lib/game/geometry/rectangle" );
 var ui =                require( "./lib/ui/ui" );
@@ -14,16 +16,23 @@ var START_POINT = {
 
 /// Main -----------------------------------------------------------------------
 
+var area =              Rectangle.around( START_POINT, 500 );
+
 var player1 =           new Player( "Player1", "PL", "blue", "yellow" );
 player1.setPos( START_POINT.x, START_POINT.y );
 
-world.npcs.generate( 1000, new Rectangle(
-    START_POINT.x - 1000,
-    START_POINT.y - 1000,
-    START_POINT.x + 1000,
-    START_POINT.y + 1000
-));
+world.npcs.generate( 100, area );
 world.addPlayer( player1 );
+
+monsters.addToWorld(
+    world,
+    area,
+    100
+);
+
+monsters.nextMove();
+
+setInterval( moveMonsters, 5e2 );
 
 ui.map.follow( player1, world );
 var mapEl =             ui.map.getElement();
@@ -44,6 +53,14 @@ mapEl.key([ "space" ], player1.plantFlower.bind( player1 ));
 function quit(){
 
     return process.exit( 0 );
+}///
+
+
+function moveMonsters(){
+    /// debug( "MOVE MONSTERS" );
+
+    monsters.nextMove();
+    ui.map.render( world );
 }///
 
 
