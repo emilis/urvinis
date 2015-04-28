@@ -16,37 +16,45 @@ var START_POINT = {
 
 /// Main -----------------------------------------------------------------------
 
-var area =              Rectangle.around( START_POINT, 500 );
+world.init().then( startGame );
 
-var player1 =           new Player( "Player1", "PL", "blue", "yellow" );
-player1.setPos( START_POINT.x, START_POINT.y );
+/// Start game -----------------------------------------------------------------
 
-world.npcs.generate( 100, area );
-world.addPlayer( player1 );
+function startGame(){
 
-monsters.addToWorld(
-    world,
-    area,
-    100
-);
+    var area =              Rectangle.around( START_POINT, 500 );
 
-monsters.nextMove();
+    var player1 =           new Player( "Player1", "PL", "blue", "yellow" );
+    player1.setPos( START_POINT.x, START_POINT.y );
 
-setInterval( moveMonsters, 5e2 );
 
-ui.map.follow( player1, world );
-var mapEl =             ui.map.getElement();
-mapEl.focus();
+    world.npcs.generate( 100, area );
+    world.addPlayer( player1 );
 
-player1.on( "new-pos", checkForNpcs );
+    monsters.addToWorld(
+        world,
+        area,
+        100
+    );
 
-ui.screen.key([ "q", "C-c" ], quit );
+    monsters.nextMove();
 
-mapEl.key([ "left" ],  player1.left.bind( player1 ));
-mapEl.key([ "right" ], player1.right.bind( player1 ));
-mapEl.key([ "up" ],    player1.up.bind( player1 ));
-mapEl.key([ "down" ],  player1.down.bind( player1 ));
-mapEl.key([ "space" ], player1.plantFlower.bind( player1 ));
+    setInterval( moveMonsters, 5e2 );
+
+    ui.map.follow( player1, world );
+    var mapEl =             ui.map.getElement();
+    mapEl.focus();
+
+    player1.on( "new-pos", checkForNpcs );
+
+    ui.screen.key([ "q", "C-c" ], quit );
+
+    mapEl.key([ "left" ],  player1.left.bind( player1 ));
+    mapEl.key([ "right" ], player1.right.bind( player1 ));
+    mapEl.key([ "up" ],    player1.up.bind( player1 ));
+    mapEl.key([ "down" ],  player1.down.bind( player1 ));
+    mapEl.key([ "space" ], player1.plantFlower.bind( player1 ));
+}///
 
 /// Functions ------------------------------------------------------------------
 
