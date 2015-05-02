@@ -37,11 +37,11 @@ function startGame(){
     monsters.nextMove();
     setInterval( monsters.nextMove, 5e2 );
 
+    ui.info.follow( player1, world );
+
     ui.map.follow( player1, world );
     var mapEl =             ui.map.getElement();
     mapEl.focus();
-
-    player1.on( events.MOVE, checkForNpcs );
 
     ui.screen.key([ "q", "C-c" ], quit );
 
@@ -57,24 +57,4 @@ function startGame(){
 function quit(){
 
     return process.exit( 0 );
-}///
-
-
-function checkForNpcs( player ){
-
-    var npc_list =      world.npcs.getAt( player );
-    if( npc_list.length ){
-        ui.info.setContent( npc_list[0].text );
-    } else {
-        ui.info.setContent( getPositionInfo( player ));
-    }
-}///
-
-
-function getPositionInfo( pos ){
-
-    return [
-        "X: ", pos.x, "\n",
-        "Y: ", pos.y, "\n",
-    ].join( "" );
 }///
