@@ -39,8 +39,7 @@ function startGame(){
     );
 
     monsters.nextMove();
-
-    setInterval( moveMonsters, 5e2 );
+    setInterval( monsters.nextMove, 5e2 );
 
     ui.map.follow( player1, world );
     var mapEl =             ui.map.getElement();
@@ -62,13 +61,6 @@ function startGame(){
 function quit(){
 
     return process.exit( 0 );
-}///
-
-
-function moveMonsters(){
-    /// debug( "MOVE MONSTERS" );
-
-    monsters.nextMove();
 }///
 
 
