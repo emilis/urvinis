@@ -68,7 +68,6 @@ function moveMonsters(){
     /// debug( "MOVE MONSTERS" );
 
     monsters.nextMove();
-    ui.map.render( world );
 }///
 
 
