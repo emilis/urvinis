@@ -11,8 +11,8 @@ var world =             require( "./lib/game/world" );
 /// Constants ------------------------------------------------------------------
 
 var START_POINT = {
-    x:                  Math.pow( 2, 23 ),
-    y:                  Math.pow( 2, 23 ),
+    x:                  291,
+    y:                  43,
 };
 
 /// Main -----------------------------------------------------------------------
@@ -32,11 +32,7 @@ function startGame(){
     world.npcs.generate( 100, area );
     world.addPlayer( player1 );
 
-    monsters.addToWorld(
-        world,
-        area,
-        100
-    );
+    monsters.addToWorld( world, area, 100 );
 
     monsters.nextMove();
     setInterval( monsters.nextMove, 5e2 );
