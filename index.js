@@ -1,6 +1,7 @@
 /// Requirements ---------------------------------------------------------------
 
 var debug =             require( "./lib/debugger" );
+var events =            require( "./lib/game/events" );
 var monsters =          require( "./lib/game/monsters" );
 var Player =            require( "./lib/game/player" );
 var Rectangle =         require( "./lib/game/geometry/rectangle" );
@@ -45,7 +46,7 @@ function startGame(){
     var mapEl =             ui.map.getElement();
     mapEl.focus();
 
-    player1.on( "new-pos", checkForNpcs );
+    player1.on( events.MOVE, checkForNpcs );
 
     ui.screen.key([ "q", "C-c" ], quit );
 
