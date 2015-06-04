@@ -1,4 +1,4 @@
 .PHONY: run
 
 run:
-	node index.js
+	./node_modules/.bin/lsc index.ls

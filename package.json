@@ -9,6 +9,7 @@
     "bluebird": "^2.9.25",
     "fractal-terrain-generator": "0.0.2",
     "knex": "^0.7.6",
+    "livescript": "^1.4.0",
     "lodash": "^3.6.0",
     "simplex-noise": "^2.1.1",
     "sqlite3": "^3.0.5"
