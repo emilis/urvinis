@@ -44,6 +44,8 @@ world.init!
         ui.map.follow player1, world
         mapEl.focus!
 
+        debug 'Welcome to the game. Press arrows to move around. Press Q to quit.'
+
 ### Functions -----------------------------------------------------------------
 
 function quit
