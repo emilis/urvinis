@@ -10,7 +10,7 @@ require! {
 
 ### Constants -----------------------------------------------------------------
 
-const START_POINT =
+const START-POINT =
     x:      291
     y:      43
 
@@ -19,30 +19,30 @@ const START_POINT =
 world.init!
     .then ->
 
-        area =      Rectangle.around START_POINT, 500
-        mapEl =     ui.map.getElement!
+        area =      Rectangle.around START-POINT, 500
+        map-el =    ui.map.get-element!
         player1 =   new Player 'Player1', 'PL', 'blue', 'yellow'
 
         ui.screen.key [ 'q', 'C-c' ], quit
 
-        mapEl.key [ 'left' ],   player1~left
-        mapEl.key [ 'right' ],  player1~right
-        mapEl.key [ 'up' ],     player1~up
-        mapEl.key [ 'down' ],   player1~down
-        mapEl.key [ 'space' ],  player1~plantFlower
+        map-el.key [ 'left' ],  player1~left
+        map-el.key [ 'right' ], player1~right
+        map-el.key [ 'up' ],    player1~up
+        map-el.key [ 'down' ],  player1~down
+        map-el.key [ 'space' ], player1~plant-flower
 
         world.npcs.generate 100, area
 
-        monsters.addToWorld world, area, 100
-        monsters.nextMove!
-        setInterval monsters.nextMove, 5e2
+        monsters.add-to-world world, area, 100
+        monsters.next-move!
+        set-interval monsters.next-move, 5e2
 
-        world.addPlayer player1
-        player1.setPos START_POINT.x, START_POINT.y
+        world.add-player player1
+        player1.set-pos START-POINT.x, START-POINT.y
 
         ui.info.follow player1, world
         ui.map.follow player1, world
-        mapEl.focus!
+        map-el.focus!
 
         debug 'Welcome to the game. Press arrows to move around. Press Q to quit.'
 
