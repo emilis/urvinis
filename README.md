@@ -4,6 +4,8 @@
 
 It runs in a terminal. It has an open world. It is (re)written in [LiveScript](http://livescript.net/). Beware of the red wolves: they will track you. Search the words of wisdom.
 
+So pre-alpha!
+
 ## Running
 
 ```bash
